@@ -47,13 +47,15 @@ main, p, ul, ol {
     list-style-type: none;
     display: none;
     padding: 0;
-    padding-top: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    background-color:grey;
 }
   
 .nav-links a {
     text-decoration: none;
     color: black;
-    font-size: 2em;
+    font-size: 1rem;
 
 }
 
@@ -69,7 +71,8 @@ main, p, ul, ol {
     right: 1.25em;
     cursor: pointer;
     color: black;
-    font-size: 4em;
+    font-size: 3em;
+    padding-top: 0.4em;
 }
 
 .icon-menu:hover {
@@ -88,6 +91,10 @@ main, p, ul, ol {
     display: block;
 }
 
+.join-us {
+    padding-bottom:1.5em;
+}
+
 .join-us ol {
     list-style-type: none;
     margin: 0;
@@ -100,7 +107,7 @@ main, p, ul, ol {
     margin:0;
     padding: 0;
     padding-left: 1.25em;
-    padding-bottom: 6.25em;
+    /*padding-bottom: 1em;  */
     text-align: left;
 }
 
@@ -132,6 +139,11 @@ main, p, ul, ol {
 
 .join-us-section ul li:nth-child(2) {
     line-height: 1.8;
+    font-size: 1rem;
+}
+
+.about {
+    padding-top: 3em;
 }
 
 .about h1 {
@@ -139,6 +151,16 @@ main, p, ul, ol {
     margin: 0;
     padding-top: 0.4em;
 }
+
+.about p {
+    font-size: 1rem;
+}
+
+.about li {
+    font-size: 1rem;
+}
+
+
 
 footer {
     text-align: center;
@@ -209,6 +231,7 @@ footer a:hover {
     list-style: none;
     padding-top: 2vw;
     padding-right: 4vw;
+    background-color:white;
   }
 
   .nav-links a {
@@ -241,8 +264,21 @@ footer a:hover {
     font-size: 1.9em;
   }
 
+  .about p {
+    font-size: 1em;
+  }  
+
+  .about li {
+    font-size: 1em;
+  }
+
   .join-us-section ul li:first-child {
     font-size: 1.9em;
+  }
+
+  .join-us-section ul li:nth-child(2) {
+    line-height: 1.8;
+    font-size: 1em;
   }
 
   footer p {
