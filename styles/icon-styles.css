@@ -31,6 +31,9 @@
 .icon-menu:before {
   content: "\e9bd";
 }
+.icon-circle-down:before {
+  content: "\ea43";
+}
 .icon-facebook:before {
   content: "\ea90";
 }
