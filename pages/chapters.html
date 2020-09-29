@@ -8,63 +8,31 @@
     <title>ΓZA Nu Chapter</title>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
     <!-- <link href="images/siteicon.ico" rel="icon" /> -->
-    <link href="styles/chapters.css" rel="stylesheet">
-    <link href="styles/icon-styles.css" rel="stylesheet">
+    <link href="/styles/chapters.css" rel="stylesheet">
+    <link href="/styles/icon-styles.css" rel="stylesheet">
+    <link href="/styles/nav.css" rel="stylesheet">
+
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    -->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
 </head>
 
 <body>
     <div class="page-margin">
-        <nav class="navbar">
-            <!-- Will have to hide icon below for desktop -->
-            <label class="icon-menu" for="chkToggle"></label>
-
-            <a id="site-logo" href="/">
-                <img src="./images/gza-logo" alt="Offical ΓZA Logo" width="auto" class="nav-logo">
-            </a>
-           
-
-            <input type="checkbox" id="chkToggle"></input>
-
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#chapters">Chapters</a></li>
-                
-                <!-- <li><a href="#brothers">Brothers</a></li> -->
-                <li>
-                    <div class="dropdown-bros">
-                        <button class="dropdown-bros-btn">Brothers <span class="icon-down">▼</span></button>
-                        <div class="dropdown-bros-content">
-                            <a href="#active-body">Active Body</a>
-                            <a href="#classes">Classes</a>
-                        </div>
-                    </div>
-                </li>
-                
-                <li><a href="#rush">Rush</a></li>
-                <li><a href="#scholarships">Scholarships</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
-        </nav>
+        <div id="nav-placeholder"></div>
+        <script>
+            $("#nav-placeholder").load("/nav.html");
+        </script>
 
 
         <main>
-            <article class="about">
-                <h1>About Gammas</h1>
-                <p>
-                    In 1987, fifteen men came together to found what would later become Gamma Zeta Alpha Fraternity, Inc. 
-                    Recognizing the difficulties facing Latinos in high education, the founders sought to create an organization
-                    aimed at developing leadership, instilling academic scholarship, and creating an environment of support that
-                    integrated Latino heritage. After realizing that other student organizations would not be able to provide
-                    all of these to its members, the founders decided that creating a fraternity, something that was new in 
-                    Latino culture, would be the best opportunity for achieving its goals. From their first meetings, the
-                    founders decided that the principles of their new organization would be:
-                </p>
-                <ul>
-                    <li><b>Academic Excellence</b>, through which they could encourage and support Latino males in higher education,</li>
-                    <li><b>Community Service</b>, with which they could give back to the communities that shaped their lives,</li>
-                    <li>and <b>the Maintenance of Latino Culture through Brotherhood</b>, by which they saw their heritage shaping their views and personal values.</li>
-                </ul>
-            </article>
+            
 
             
         </main>

@@ -23,18 +23,12 @@ body, html {
     margin-bottom: 10px;
 }
 
-main, p, ul, ol {
-    justify-content: flex-start   !important ;
-    text-align: left !important;
-}
-
 .navbar {
     padding-bottom: 0.625em;
 }
 
 .nav-logo {
     height: 7em;
-
 }
   
 #site-logo {
@@ -95,109 +89,6 @@ main, p, ul, ol {
     display: block;
 }
 
-.join-us {
-    padding-bottom:1.5em;
-}
-
-.join-us ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 1.25em;
-}
-
-.join-us ul {
-    list-style-type: none;
-    margin:0;
-    padding: 0;
-    padding-left: 1.25em;
-    /*padding-bottom: 1em;  */
-    text-align: left;
-}
-
-.join-us ul li {
-    line-height: 1.6;
-}
-
-.join-us-image {
-    height: 20%;
-    width: 100%;
-    /* code below needed to keep image to left side */
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
-.join-us-section {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    /* padding-bottom: 30px; */
-    /* padding-bottom: 1.875em; */
-    justify-content: center;
-}
-
-.join-us-section ul li:first-child {
-    font-size: 2.5em;
-    /* text-align:center; */
-}
-
-.join-us-section ul li:nth-child(2) {
-    line-height: 1.8;
-    font-size: 1rem;
-}
-
-.about h1 {
-    font-size: 2.5em;
-    margin: 0;
-    padding-top: 1em;
-}
-
-.about p {
-    font-size: 1rem;
-}
-
-.about li {
-    font-size: 1rem;
-}
-
-
-
-footer {
-    text-align: center;
-    background-color:black;
-    color: white;
-    /*
-    width: 100%;
-    height: 100%;
-     */
-    padding-top: 0.1em;
-    
-    margin: 0 -9999rem;
-    /* add back negative margin value */
-    padding: 0.25rem 9999rem;
-}
-
-/* Need the rule below, or else <p> tag text will not align */
-footer p {
-    text-align: center    !important;
-    font-size: 2vh;
-} 
-
-footer a {
-    text-decoration:none;
-    color: white;
-    font-size: 4vh;
-    padding-right: 1em;
-}
-
-footer a:nth-child(4) {
-    padding-right: 0;
-}
-
-footer a:hover {
-    color: silver;
-}
-
 /*
  Code below controls MOBILE dropdown menu for 'Brothers'
  */
@@ -253,11 +144,45 @@ footer a:hover {
     display: block;
 }
 
-
 /*
  END of MOBILE dropdown menu code
  */
 
+footer {
+    text-align: center;
+    background-color:black;
+    color: white;
+    /*
+    width: 100%;
+    height: 100%;
+     */
+    padding-top: 0.1em;
+    
+    margin: 0 -9999rem;
+    /* add back negative margin value */
+    padding: 0.25rem 9999rem;
+}
+
+/* Need the rule below, or else <p> tag text will not align */
+footer p {
+    text-align: center    !important;
+    font-size: 2vh;
+} 
+
+footer a {
+    text-decoration:none;
+    color: white;
+    font-size: 4vh;
+    padding-right: 1em;
+}
+
+footer a:nth-child(4) {
+    padding-right: 0;
+}
+
+footer a:hover {
+    color: silver;
+}
 
 
 /* REMINDER: Design for MOBILE first 
@@ -283,12 +208,6 @@ footer a:hover {
   .dropdown-bros-content a {
       text-align: left  !important;
   }
-
-  /*
-  .dropdown-bros-content a:first-child {
-      border-bottom-color: silver;
-  }
-   */
   
   /* END of dropdown menu code */
     
@@ -344,37 +263,6 @@ footer a:hover {
   .nav-links a:hover {
     /* color: silver; */
     color: #808080;
-  }
-
-
-  .join-us-section {
-    flex-wrap: nowrap;
-  }
-
-  .join-us-image {
-    height: 40em;
-    width: 60em;
-  }
-
-  .about h1 {
-    font-size: 1.9em;
-  }
-
-  .about p {
-    font-size: 1em;
-  }  
-
-  .about li {
-    font-size: 1em;
-  }
-
-  .join-us-section ul li:first-child {
-    font-size: 1.9em;
-  }
-
-  .join-us-section ul li:nth-child(2) {
-    line-height: 1.8;
-    font-size: 1em;
   }
 
   footer p {
