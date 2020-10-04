@@ -46,7 +46,8 @@ body, html {
     /* padding-top: 2em; */
     padding-top: 0.1em;
     padding-bottom: 0.1em;
-    background-color:grey;
+    background-color: grey;
+    font-weight: bold;
    /* background: linear-gradient(0deg, grey 89%, white 11%); */
 }
   
@@ -246,6 +247,7 @@ footer a:hover {
     padding-right: 4vw;
     background-color:white;
     background: white;
+    font-weight: 400;
   }
 
   .nav-links a {

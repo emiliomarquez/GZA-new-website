@@ -1,0 +1,58 @@
+main, p, ul, ol {
+    justify-content: flex-start   !important ;
+    text-align: left !important;
+}
+
+.rush-banner-1 {
+    width: 55em;
+    max-width: 100%;
+    text-align: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+    box-shadow: 17px 14px 10px grey;
+}
+
+.rush-info {
+    max-width: 1020px;
+    display: flex;
+    border: 3px solid blue;
+    padding-top: 1em;
+
+}
+
+.rush-info-text {
+    
+}
+
+.rush-dean {
+    border: 3px solid red;
+    
+}
+
+.rush-dean a {
+    text-decoration: none;
+    color: black;
+}
+
+.rush-dean a:hover {
+   color: #808080;
+ }
+
+
+
+
+
+
+/* REMINDER: Design for MOBILE first 
+    -The code below controls website for NON-mobile devices
+    -Note that the code above auto applies to code below
+     unless specificed/overwritten otherwise
+*/
+@media only screen and (min-width: 1020px) {
+
+  
+}
+/* END OF DESKTOP DESIGN */

@@ -3,10 +3,21 @@ main, p, ul, ol {
     text-align: left !important;
 }
 
+.chapters-map {
+    position: relative;
+    /* padding-bottom: 75%;  This is the aspect ratio */
+    padding-bottom: 65%;
+    height: 0;
+    overflow: hidden;
+}
 
-/*
- END of MOBILE dropdown menu code
- */
+.chapters-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -16,9 +27,9 @@ main, p, ul, ol {
      unless specificed/overwritten otherwise
 */
 @media only screen and (min-width: 1020px) {
-
+    .chapters-map {
+        padding-bottom: 45%;
+    }
   
-
-
 }
 /* END OF DESKTOP DESIGN */
