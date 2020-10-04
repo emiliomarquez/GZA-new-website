@@ -18,23 +18,30 @@ main, p, ul, ol {
 .rush-info {
     max-width: 1020px;
     display: flex;
-    border: 3px solid blue;
-    padding-top: 1em;
+    /* border: 3px solid blue; */
+    padding-top: 3em;
+    flex-direction: column-reverse;
 
-}
+}   
 
 .rush-info-text {
-    
+    padding-right: 2.5em;
 }
 
 .rush-dean {
-    border: 3px solid red;
-    
+    border: 3px solid black;
+    width: 25em;
+
+    display: block;
+    margin: 0 auto;
 }
 
 .rush-dean a {
     text-decoration: none;
     color: black;
+    font-size: 1.8em;
+    text-align: center !important;
+    display: block;
 }
 
 .rush-dean a:hover {
@@ -42,9 +49,40 @@ main, p, ul, ol {
  }
 
 
+ .rush-dean-infoa {
+     text-align: center !important;
+     font-size: 1.2em;
+     margin: 0;
+ }
 
+ .rush-dean-infob {
+     text-align: center !important;
+     font-style: italic;
+     margin: 0;
+     margin-bottom: 0.5em;
+     font-size: 0.75em;
+ }
 
+ .current-dean {
+     width: 10em;
+     display: block;
+     margin: 0 auto;
 
+     border: 1px solid black;
+ }
+
+ .rush-dean picture {
+     display:block;
+     float:left;
+ }
+
+ .rush-dean-text {
+    flex-direction: column;
+
+    display: block;
+    margin: 0 auto;
+    padding-top: 2em;
+}
 
 /* REMINDER: Design for MOBILE first 
     -The code below controls website for NON-mobile devices
@@ -52,6 +90,28 @@ main, p, ul, ol {
      unless specificed/overwritten otherwise
 */
 @media only screen and (min-width: 1020px) {
+    .rush-info{
+        flex-direction: unset;
+        margin: auto;
+        padding-top: 3em;
+    }
+
+    .current-dean {
+        
+    }
+
+    .rush-dean {
+
+    }
+
+    .rush-dean picture {
+        
+    }
+
+    .rush-dean-text {
+      
+    }
+
 
   
 }
