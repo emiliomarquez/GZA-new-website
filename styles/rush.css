@@ -84,6 +84,15 @@ main, p, ul, ol {
     padding-top: 2em;
 }
 
+.upcoming {
+    margin: auto;
+    max-width: 1020px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
 /* REMINDER: Design for MOBILE first 
     -The code below controls website for NON-mobile devices
     -Note that the code above auto applies to code below
@@ -97,7 +106,7 @@ main, p, ul, ol {
     }
 
     .current-dean {
-        
+
     }
 
     .rush-dean {

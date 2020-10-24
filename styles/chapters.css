@@ -19,6 +19,11 @@ main, p, ul, ol {
     height: 100%;
 }
 
+main {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
 
 
 /* REMINDER: Design for MOBILE first 

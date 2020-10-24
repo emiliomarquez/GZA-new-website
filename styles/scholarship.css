@@ -1,0 +1,87 @@
+main, p, ul, ol {
+    justify-content: flex-start   !important ;
+    text-align: left !important;
+}
+
+main {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    /* margin-bottom: 0; */
+}
+
+h2, h3, h4 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+h2 {
+    padding-top: 0.5em;
+}
+
+.scholarship-info p {
+    margin-top: 0;
+}
+
+.scholarship-info ul {
+    margin-top: 0.5em;
+}
+
+.ship-recipients {
+    width: 55em;
+    max-width: 100%;
+
+    /* 
+       the code below allows for images 
+       on mobile to be fit to screen
+    */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    border: black;
+    border-style: solid;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+.req-text {
+    margin-bottom: 0;
+}
+
+.scholarship-download-button {
+    color: white;
+    padding: 0.8em;
+    background-color: #797979;
+    width: 16em;
+    text-align: center !important;
+    border-radius: 18px;
+    box-shadow: 0px 3px 10px -3px #000000;
+    margin: 0 auto;
+    display: block;
+
+    text-decoration: none;
+    margin-bottom: 2.5em;
+}
+
+.scholarship-download-button:hover {
+    background-color:black;
+} 
+
+
+/* REMINDER: Design for MOBILE first 
+    -The code below controls website for NON-mobile devices
+    -Note that the code above auto applies to code below
+     unless specificed/overwritten otherwise
+*/
+@media only screen and (min-width: 1020px) {
+  
+}
+/* END OF DESKTOP DESIGN */
