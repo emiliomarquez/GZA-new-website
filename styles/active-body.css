@@ -59,11 +59,7 @@ main img {
 }
 
 .exec-board {
-    /*
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 25em;
-    */
+    padding-bottom: 70em;
 }
 
 .photo-collage-thumbnails{
@@ -135,3 +131,10 @@ main img {
   
 }
 /* END OF DESKTOP DESIGN */
+
+@media only screen and (max-width: 1000px) {
+    .exec-board {
+        padding-bottom: 100em;
+    }
+  
+}
