@@ -162,6 +162,7 @@ footer {
     margin: 0 -9999rem;
     /* add back negative margin value */
     padding: 0.25rem 9999rem;
+    overflow: hidden;
 }
 
 /* Need the rule below, or else <p> tag text will not align */
