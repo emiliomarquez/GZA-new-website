@@ -1,0 +1,137 @@
+main, p, ul, ol {
+    justify-content: flex-start   !important ;
+    text-align: left !important;
+}
+
+main {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+/* CODE FOR THUMBNAILS BELOW */
+
+.text-over-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* code BELOW is for name and position */
+.name-and-position {
+    font-family: 'Georgia';
+    text-align: center !important;
+    font-weight: 900;
+}
+
+.name {
+    font-size: 1.3em;
+}
+
+.position {
+    font-size: small;
+    font-style: italic;
+    color: #807a7a;
+}
+/* END of code for name and position */
+
+main img {
+    width: 100%;
+}
+
+
+
+.photo-collage-thumbnails{
+    /*
+    box-sizing:content-box;
+    border: 5px solid red;
+    float: center;
+    */
+    text-align: center;
+    margin:0;
+    list-style-type: none;
+  
+    /* code below allows side by side images */
+    padding-top: 5px;
+  }
+
+.img__wrap {
+    position: relative;
+    height: 260px;
+    width: 455px;
+  
+    /* code below allows side by side images */
+    float: left;
+    padding: 2px; /* overall padding between each image */
+
+    margin-bottom: 5em;
+}
+
+.photo__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* code directly below controls the display of class members */
+.photo__description p:first-child {
+    /* this styling controls left side of class members */ 
+    padding-right: 5em;
+}
+
+/* the styling below controls right side of class members */
+.photo__description p:nth-child(2) {
+    margin: 0;
+    /* padding-bottom: 1.5em; */
+
+}
+
+  
+.img__wrap:hover .photo__description {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/* REMINDER: Design for MOBILE first 
+
+    -The code below controls website for NON-mobile devices
+    -Note that the code above auto applies to code below
+     unless specificed/overwritten otherwise
+
+What this query really means, is 
+“If [device width] is greater than or equal to 1020px, then do {…}”
+*/
+@media only screen and (min-width: 1020px) {
+
+}
+    
+  
+/*
+What this query really means, 
+is “If [device width] is less than or equal to 1000px, then do {…}”
+
+*/
+@media only screen and (max-width: 1000px) {
+   
+  
+}
