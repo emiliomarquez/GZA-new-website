@@ -6,6 +6,7 @@ main, p, ul, ol {
 main {
     max-width: 1020px;
     margin: 0 auto;
+    padding-top: 1.5em;
 }
 
 /* CODE FOR THUMBNAILS BELOW */
