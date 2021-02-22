@@ -132,7 +132,26 @@ What this query really means,
 is “If [device width] is less than or equal to 1000px, then do {…}”
 
 */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 550px) {
+    .photo-collage-thumbnails{
+        padding-left: 0;
+    }
    
   
+}
+
+@media only screen and (max-width: 498px) {
+    .img__wrap{
+        height: 176px;
+        width: 311px;
+    }
+
+    .photo__description{
+        font-size: small;
+    }
+
+    .long-name-smaller-padding{
+        padding-right: 2em !important;
+    }
+
 }
