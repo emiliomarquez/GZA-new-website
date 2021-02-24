@@ -13,33 +13,52 @@
     <link href="/styles/nav.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="page-margin">
+    
         <div id="nav-placeholder"></div>
+    </div>
+    
         <!--
         <script>
             $("#nav-placeholder").load("/nav.html");
         </script>
     -->
 
-        <section class="showcase-pics">
-            <picture>
+    <!-- documentation for Splidejs located here: https://splidejs.com/getting-started/ -->
+    <div class="splide" style="padding-top:1.5em;" >
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img class="slideshow-img" src="/images/about/slideshow-a.jpeg" style="width:100%"></li>
+                <li class="splide__slide"><img class="slideshow-img" src="/images/about/slideshow-b.jpeg" style="width:100%"></li>
+                <li class="splide__slide"><img class="slideshow-img" src="/images/about/slideshow-c.jpeg" style="width:100%"></li>
+                <li class="splide__slide"><img class="slideshow-img" src="/images/about/slideshow-d.jpg" style="width:100%"></li>
+                <li class="splide__slide"><img class="slideshow-img" src="/images/about/slideshow-e.jpg" style="width:100%"></li>
+                <li class="splide__slide"><img class="slideshow-img" src="/images/about/slideshow-f.jpg" style="width:100%"></li>
+                <li class="splide__slide"><img class="slideshow-img" src="/images/about/slideshow-g.jpeg" style="width:100%"></li>
+                <li class="splide__slide"><img class="slideshow-img" src="/images/about/slideshow-h.jpeg" style="width:100%"></li>
+                <li class="splide__slide"><img class="slideshow-img" src="/images/about/slideshow-i.jpg" style="width:100%"></li>
+                <li class="splide__slide"><img class="slideshow-img" src="/images/about/slideshow-j.jpeg" style="width:100%"></li>
+            </ul>
+        </div>
 
-            </picture>
-            <picture>
+        <div class="splide__progress">
+            <div class="splide__progress__bar" style="background: black !important;">
+            </div>
+        </div>
 
-            </picture>
-            <picture>
-
-            </picture>
-
-        </section>
+    
+    </div>
+    <div class="page-margin">
 
         <main>
+            <!-- The following slideshow code was adapted from w3schools
             <section class="slideshow">
-                <!-- The following slideshow code was adapted from w3schools -->
                 <div class="slideshow-container">
                     <div class="mySlides fade">
                       <div class="numbertext">1 / 9</div>
@@ -111,6 +130,7 @@
                     </div>
 
             </section>
+        -->
 
             <article class="about">
                 <h1>About Gammas</h1>
@@ -167,8 +187,69 @@
 
     <!-- Slideshow script adapted from w3schools -->
     <script>
+        // jquery usually is run after page is done loading
+        // that could be main reason why navbar loads after slideshow
+        // may want to replace this jquery navbar method with php in future
         $("#nav-placeholder").load("/nav.html");
+        // console.log("window height = "+ $(window).height());
+        
+        var elms = document.getElementsByClassName( 'splide' );
+        
+        for ( var i = 0, len = elms.length; i < len; i++ ) {
+            var splide = new Splide( elms[ i ], { perPage: 2} );
+            console.log(splide.index);
+            console.log(elms.length);
+            splide.mount();
+        }
+        var autoSlidesIteration = 0;
+        var images = document.getElementsByClassName('splide__slide');
+        console.log("images length:");
+        console.log(images.length);
 
+        var nextArrow = document.getElementsByClassName('splide__arrow--next');
+        console.log("nextarrow length:");
+        console.log(nextArrow.length);
+
+        // wait 10 seconds before starting slideshow
+        setTimeout(autoSlides, 12000);
+        
+
+        function autoSlides() {
+            
+            /*
+                Currently this function presses the next/right arrow
+                four times total 
+
+                - it does not track if the next/prev arrow was clicked
+                such that no matter if it is on the last slide or
+                if an arrow is clicked -> it will still press the
+                next arrow four times before stopping
+            */
+            if(autoSlidesIteration < 4){
+                for(var j = 0; j < images.length/2; j++){
+                    console.log(j);
+                    nextArrow[0].click();
+                }
+                ++autoSlidesIteration;
+                console.log("autoSlidesIteration = " + autoSlidesIteration);
+                
+                // recursively calls function again
+                // as long as autoSlidesIteration < 4
+                setTimeout(autoSlides, 12000);
+            }
+
+        }
+    
+        
+        /*
+        document.addEventListener( 'DOMContentLoaded', function () {
+		new Splide( '.splide' ).mount();
+        } ); 
+        */
+    
+    
+
+        /* FIRST VERSION OF SLIDESHOW JAVASCRIPT BELOW
         var slideIndex = 0;
         showSlides();
         
@@ -182,12 +263,20 @@
           slideIndex++;
           if (slideIndex > slides.length) {slideIndex = 1}    
           for (i = 0; i < dots.length; i++) {
+            //dots[i].innerHTML = "Γ";
+            //if(i > 0) {
+            //    document.getElementsByClassName("not-active").innerHTML="";
+            //}
+            
             dots[i].className = dots[i].className.replace(" active", "");
+            
+            
           }
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 5000); // Change image every 2 seconds
         }
+        */
     </script>
 </body>
 

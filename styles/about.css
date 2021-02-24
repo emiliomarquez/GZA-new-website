@@ -128,7 +128,7 @@ main {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 800px;
+  width: 700px;
   position: relative;
   margin: auto;
 }
@@ -166,6 +166,9 @@ main {
 
 .active {
   background-color: #717171;
+}
+.non-active {
+  
 }
 
 /* Fading animation */
