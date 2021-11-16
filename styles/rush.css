@@ -30,8 +30,7 @@ main, p, ul, ol {
 
 .rush-dean {
     border: 3px solid black;
-    width: 25em;
-
+    width: 22em;
     display: block;
     margin: 0 auto;
 }
@@ -93,6 +92,10 @@ main, p, ul, ol {
     padding-bottom: 3em;
 }
 
+.rush-flier{
+    width:100%;
+}
+
 /* REMINDER: Design for MOBILE first 
     -The code below controls website for NON-mobile devices
     -Note that the code above auto applies to code below
@@ -110,7 +113,7 @@ main, p, ul, ol {
     }
 
     .rush-dean {
-
+    
     }
 
     .rush-dean picture {
@@ -119,6 +122,12 @@ main, p, ul, ol {
 
     .rush-dean-text {
       
+    }
+
+    .rush-flier{
+        width:50%;
+        margin: 0 auto;
+        display: block;
     }
 
 

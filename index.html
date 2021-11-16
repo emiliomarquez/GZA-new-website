@@ -197,18 +197,18 @@
         
         for ( var i = 0, len = elms.length; i < len; i++ ) {
             var splide = new Splide( elms[ i ], { perPage: 2} );
-            console.log(splide.index);
-            console.log(elms.length);
+            //console.log(splide.index);
+            //console.log(elms.length);
             splide.mount();
         }
         var autoSlidesIteration = 0;
         var images = document.getElementsByClassName('splide__slide');
-        console.log("images length:");
-        console.log(images.length);
+        //console.log("images length:");
+        //console.log(images.length);
 
         var nextArrow = document.getElementsByClassName('splide__arrow--next');
-        console.log("nextarrow length:");
-        console.log(nextArrow.length);
+        //console.log("nextarrow length:");
+        //console.log(nextArrow.length);
 
         // wait 10 seconds before starting slideshow
         setTimeout(autoSlides, 12000);
@@ -231,7 +231,7 @@
                     nextArrow[0].click();
                 }
                 ++autoSlidesIteration;
-                console.log("autoSlidesIteration = " + autoSlidesIteration);
+                //console.log("autoSlidesIteration = " + autoSlidesIteration);
                 
                 // recursively calls function again
                 // as long as autoSlidesIteration < 4
