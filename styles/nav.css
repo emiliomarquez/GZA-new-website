@@ -157,7 +157,8 @@ footer {
     width: 100%;
     height: 100%;
      */
-    padding-top: 0.1em;
+    /*padding-top: 0.1em; */
+    padding-top: 2em !important;
     
     margin: 0 -9999rem;
     /* add back negative margin value */
